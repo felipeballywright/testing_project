@@ -1,6 +1,10 @@
 export function reverseString(val){
     let reversedString = "";
-    while(val.length){
-        let firstCharacter
+
+    for(let i = 0; i <= val.length; i++){
+        let currentCharacter = val.charAt(val.length - i);
+        reversedString += currentCharacter;
     }
+
+    return reversedString;
 }
